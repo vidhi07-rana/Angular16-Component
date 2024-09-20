@@ -1,0 +1,51 @@
+.row {
+    margin-bottom: 15px; /* Adds some space between rows */
+}
+
+.col-xs-12 {
+    padding: 0; /* Removes default padding */
+}
+
+.list-group-item {
+    border: 1px solid #ddd; /* Adds a border around each item */
+    border-radius: 5px; /* Rounds the corners */
+    padding: 10px; /* Adds space inside the item */
+    margin-bottom: 10px; /* Space between items */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+.list-group-item-heading {
+    margin: 0; /* Ensures the heading has no margin */
+}
+
+.list-group-item-text {
+    margin-top: 5px; /* Adds a small space between the heading and the text */
+    font-size: 14px; /* Slightly smaller font for the description */
+}
+
+.pull-left {
+    display: inline-block;
+    width: 80%; /* Allocates space for the text section */
+}
+
+.pull-right {
+    display: inline-block;
+    width: 20%; /* Allocates space for the image */
+    text-align: right; /* Aligns the image to the right */
+}
+
+.img-responsive {
+    border: 1px solid #ddd; /* Adds a border to the image */
+    border-radius: 3px; /* Rounds the corners of the image */
+    max-height: 50px; /* Ensures the image has a max height */
+    padding: 2px; /* Adds some space around the image */
+}
+
+.btn-success {
+    margin-bottom: 10px; /* Adds space below the button */
+}
+

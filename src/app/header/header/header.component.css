@@ -1,0 +1,40 @@
+/* Ensure the navbar brand, links, and dropdown are on the same line */
+.navbar-header {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-brand {
+    padding: 15px 20px;
+}
+
+.navbar-nav > li > a {
+    padding: 15px 20px;
+}
+
+.dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+}
+
+.caret {
+    margin-left: 5px;
+}
+.navbar-nav > li > a {
+    text-decoration: none; /* Removes underline from links */
+    padding: 15px 20px; /* Consistent padding for navbar items */
+}
+
+.navbar-nav > li > a:hover {
+    text-decoration: none; /* Ensures text stays without decoration on hover */
+}
+
