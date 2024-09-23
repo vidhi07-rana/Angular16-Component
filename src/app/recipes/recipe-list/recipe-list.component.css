@@ -9,7 +9,7 @@
 .list-group-item {
     border: 1px solid #ddd; /* Adds a border around each item */
     border-radius: 5px; /* Rounds the corners */
-    padding: 10px; /* Adds space inside the item */
+    padding: 0px; /* Adds space inside the item */
     margin-bottom: 10px; /* Space between items */
     background-color: #f9f9f9; /* Light background color */
 }
@@ -42,7 +42,7 @@
     border: 1px solid #ddd; /* Adds a border to the image */
     border-radius: 3px; /* Rounds the corners of the image */
     max-height: 50px; /* Ensures the image has a max height */
-    padding: 2px; /* Adds some space around the image */
+    padding: 10px; /* Adds some space around the image */
 }
 
 .btn-success {
