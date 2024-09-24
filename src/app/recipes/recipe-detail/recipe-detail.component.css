@@ -33,16 +33,46 @@ h1 {
     border-radius: 4px; /* Rounds the button corners */
 }
 
-.dropdown-menu {
-    text-align: center; /* Centers the dropdown content */
-    border-radius: 4px; /* Rounded corners for dropdown */
-    border: 1px solid #ddd; /* Adds a subtle border */
-    padding: 0; /* Removes default padding */
-}
 
 .dropdown-menu li a {
     font-size: 14px; /* Adjusts font size for dropdown items */
+text-decoration: none;
 }
+.btn-group {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position:initial;
+    top: 100%;  /* Positions the dropdown right below the button */
+    left: 0;
+    z-index: 1000;  /* Ensures the dropdown appears on top of other content */
+    display: none; /* Hide by default and will be displayed on toggle */
+    float: none;
+    min-width: 70px;
+    padding: 5px 0;
+    margin: 2px 0 0; /* Adjust margin to manage the gap between button and dropdown */
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    width: 150px;
+  }
+  
+  .btn-group .dropdown-toggle:active, 
+  .btn-group .dropdown-toggle:focus {
+    outline: none;
+  }
+  
+  .btn-group.open .dropdown-menu {
+    display: block;
+  }
+  
 
 .dropdown-menu li a:hover {
     background-color: #f1f1f1; /* Changes background color on hover */
@@ -53,4 +83,20 @@ h1 {
     font-size: 13px; /* Adjusted font size for better readability */
     line-height: 1.6; /* Increases line spacing for readability */
     border-radius: 4px; /* Adds rounded corners */
+}
+/* Container to center the image */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 100%; /* Ensures the container takes full height (if needed) */
+    width: 100%; /* Ensures the container takes full width */
+}
+
+/* Image styling */
+.img-responsive {
+    height: 370px; /* Set fixed height */
+    width: 370px;  /* Set fixed width */
+    object-fit: cover; /* Ensures the image covers the given area */
+    border-radius: 8px; /* Adds rounded corners if needed */
 }
