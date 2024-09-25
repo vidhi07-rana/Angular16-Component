@@ -14,8 +14,8 @@
 
 /* Recipe Name Styling */
 h1 {
-    text-align: center; /* Centers the recipe name */
-    margin: 10px 0; /* Adds space above and below the name */
+    margin-left: 90px;
+    text-align:justify; /* Centers the recipe name */
 }
 
 /* Button Group Styling */
@@ -85,18 +85,11 @@ text-decoration: none;
     border-radius: 4px; /* Adds rounded corners */
 }
 /* Container to center the image */
-.image-container {
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    height: 100%; /* Ensures the container takes full height (if needed) */
-    width: 100%; /* Ensures the container takes full width */
-}
+
 
 /* Image styling */
 .img-responsive {
-    height: 370px; /* Set fixed height */
-    width: 370px;  /* Set fixed width */
-    object-fit: cover; /* Ensures the image covers the given area */
-    border-radius: 8px; /* Adds rounded corners if needed */
+    height: 370px;
+    width: 370px;     object-fit: cover; 
+    border-radius: 8px; 
 }

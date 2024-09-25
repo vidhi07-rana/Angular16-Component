@@ -1,3 +1,4 @@
+<div style="margin-left: 150px;">
 <div class="row">
     <div class="col-xs-12">
         <img [src]="recipe.imagePath" alt={{recipe.name}} class="imag-responsive" style="   height: 290px;
@@ -10,20 +11,20 @@
         <h1>{{recipe.name}}</h1>
     </div>
 </div>
-<div class="row">
+<div class="row" >
     <div class="col-xs-12">
         <div class="btn-group "
        appDropdown >
             <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe</button>
-            <ul class="dropdown-menu">
-                <li><a (click)="AddToShoppingList()" style="cursor:pointer">To Shopping List</a></li>
-                <li><a href="#">Edit Recipe</a></li>
-                <li><a href="#">Delete Recipe</a></li>
+            <ul class="dropdown-menu" style="cursor: pointer;">
+                <li ><a (click)="AddToShoppingList()" style="cursor:pointer">To Shopping List</a></li>
+                <li><a (click)="onEditRecipe()">Edit Recipe</a></li>
+                <li><a >Delete Recipe</a></li>
             </ul>
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row" >
     <div class="col-xs-12">
         {{recipe.description}}
     </div>
@@ -39,5 +40,5 @@
         </ul> 
     </div>
 </div>
-
+</div>
 

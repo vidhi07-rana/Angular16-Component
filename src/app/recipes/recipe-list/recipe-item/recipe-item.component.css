@@ -14,9 +14,7 @@
     background-color: #f9f9f9; /* Light background color */
 }
 
-.list-group-item:hover {
-    background-color: #f1f1f1; /* Light gray background on hover */
-}
+
 
 .list-group-item-heading {
     margin: 0; /* Ensures the heading has no margin */
