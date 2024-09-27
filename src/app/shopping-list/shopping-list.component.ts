@@ -14,7 +14,7 @@ private igChangeSub: Subscription
   constructor(private shoppingListService: ShoppingListService){}
 
   ngOnInit() {
- this.ingredient=this.shoppingListService.getIngrident()
+ this.ingredient=this.shoppingListService.getIngridents()
  this.igChangeSub = this.shoppingListService.ingredientChanged.subscribe((ingredient: Ingredient[] )=>{
       this.ingredient = ingredient
     })

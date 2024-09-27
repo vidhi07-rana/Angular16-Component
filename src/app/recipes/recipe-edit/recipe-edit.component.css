@@ -1,0 +1,40 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+    margin-bottom: 0px; /* Removed default margin-bottom between rows */
+}
+
+.col-xs-12, .col-xs-8, .col-xs-2 {
+    flex: 0 0 auto;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.col-xs-8 {
+    width: 66.66%; /* Takes 8/12 of the row */
+}
+
+.col-xs-2 {
+    width: 16.66%; /* Takes 2/12 of the row */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced space between form elements */
+}
+
+.form-control {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#imageContainer {
+    margin-bottom: 0px; /* Removes gap between image and description field */
+}

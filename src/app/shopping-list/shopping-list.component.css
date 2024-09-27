@@ -1,0 +1,45 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.col-xs-10 {
+    flex: 0 0 auto;
+    width: 83.33%; /* Takes 10/12 of the row */
+    padding: 10px;
+}
+
+.list-group {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-group-item {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
