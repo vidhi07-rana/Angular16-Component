@@ -8,7 +8,9 @@
                     <a href="#" class="navbar-brand" >Recipe Book</a>
                 </div>
                 <li routerLinkActive="active"><a  routerLink="/recipes" >Recipes</a></li>
-                <li routerLinkActive="active"><a routerLink="shopping-list">Shopping List</a></li>
+                <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping List</a></li>
+                <li routerLinkActive="active"><a routerLink="/auth">Authenticate</a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -16,8 +18,8 @@
                         Menu
                     </a>
                     <ul class="dropdown-menu" appDropdown>
-                        <li><a style="text-decoration: none;">Save Data</a></li>
-                        <li ><a style="text-decoration: none;">Fetch Data</a></li>
+                        <li><a style="text-decoration: none;" (click)="onSave()">Save Data</a></li>
+                        <li ><a style="text-decoration: none;" (click)="onFetchData()">Fetch Data</a></li>
                     </ul>
                 </li>
             </ul>
