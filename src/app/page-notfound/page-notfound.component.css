@@ -1,0 +1,36 @@
+.error-page {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 100px;
+    margin: 0;
+    color: rgb(51, 126, 51);
+}
+h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #333;
+}
+p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgb(51, 126, 51);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+a:hover {
+    background-color: rgb(51, 126, 51);
+}

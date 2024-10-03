@@ -6,11 +6,14 @@ import { RecipeStartComponent } from "./recipes/recipe-start/recipe-start.compon
 import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.component";
 import { RecipeEditComponent } from "./recipes/recipe-edit/recipe-edit.component";
 import { AuthComponent } from "./auth/auth.component";
+import { AuthGuard } from "./auth/auth.guard";
+import { PageNotfoundComponent } from "./page-notfound/page-notfound.component";
 
 
 const appRoutes: Route[]=[
     {path:'', redirectTo:'/recipes', pathMatch: 'full'},
     {path:'recipes', component:RecipesComponent,
+        canActivate:[AuthGuard],
         children:[
             {
                 path:'', component:RecipeStartComponent
@@ -32,6 +35,10 @@ const appRoutes: Route[]=[
     ,{
         path:'auth', component:AuthComponent
     },
+
+    {
+        path :'**', component:PageNotfoundComponent
+    }
 
 
 

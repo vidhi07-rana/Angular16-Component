@@ -7,15 +7,18 @@
                 <div class="navbar-header">
                     <a href="#" class="navbar-brand" >Recipe Book</a>
                 </div>
-                <li routerLinkActive="active"><a  routerLink="/recipes" >Recipes</a></li>
+                <li routerLinkActive="active" *ngIf="isAuthenticated"><a  routerLink="/recipes" >Recipes</a></li>
                 <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping List</a></li>
-                <li routerLinkActive="active"><a routerLink="/auth">Authenticate</a></li>
+                <li routerLinkActive="active" *ngIf="!isAuthenticated"><a routerLink="/auth">Authenticate</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
+                <li *ngIf="isAuthenticated">
+                    <a style="cursor: pointer;" (click)="onLogOut()" >LogOut</a>
+                </li>
+                <li class="dropdown" *ngIf="isAuthenticated">
                     <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Menu
+                        Manage
                     </a>
                     <ul class="dropdown-menu" appDropdown>
                         <li><a style="text-decoration: none;" (click)="onSave()">Save Data</a></li>
